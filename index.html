@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
+
   <meta charset="UTF-8">
 
   <meta
@@ -8,25 +10,53 @@
     content="width=device-width, initial-scale=1.0"
   >
 
-  <title>Diário de Bordo</title>
+  <title>Diário de Bordo PWA</title>
 
-  <link rel="stylesheet" href="style.css">
+  <meta
+    name="description"
+    content="Aplicativo PWA Diário de Bordo para registro de atividades diárias."
+  >
 
-  <link rel="manifest" href="manifest.json">
+  <meta
+    name="keywords"
+    content="PWA, Diário, HTML, CSS, JavaScript"
+  >
+
+  <meta
+    name="author"
+    content="Ryan Levi"
+  >
 
   <meta
     name="theme-color"
     content="#2563eb"
   >
+
+  <link
+    rel="manifest"
+    href="manifest.json"
+  >
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
+
 </head>
 
 <body>
 
-  <div class="container">
+  <main class="container">
 
-    <h1>📘 Diário de Bordo</h1>
+    <h1>
+      📘 Diário de Bordo
+    </h1>
 
     <form id="form">
+
+      <label for="titulo">
+        Título
+      </label>
 
       <input
         type="text"
@@ -35,11 +65,19 @@
         required
       >
 
+      <label for="descricao">
+        Descrição
+      </label>
+
       <textarea
         id="descricao"
         placeholder="Descrição"
         required
       ></textarea>
+
+      <label for="data">
+        Data
+      </label>
 
       <input
         type="date"
@@ -53,15 +91,20 @@
 
     </form>
 
-    <button id="installBtn" hidden>
+    <button
+      id="installBtn"
+      aria-label="Instalar aplicativo"
+      hidden
+    >
       Instalar Aplicativo
     </button>
 
     <div id="lista"></div>
 
-  </div>
+  </main>
 
   <script src="script.js"></script>
 
 </body>
+
 </html>

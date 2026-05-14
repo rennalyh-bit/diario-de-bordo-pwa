@@ -1,34 +1,87 @@
-# Diário de Bordo PWA
+# Diário de Bordo PWA - Otimização de Performance
 
-Aplicação Web Progressiva (PWA) desenvolvida com HTML, CSS e JavaScript.
+## Descrição
 
-## Funcionalidades
+Projeto PWA desenvolvido com HTML, CSS e JavaScript com foco em registro de atividades diárias.
 
-* Criar entradas com título, descrição e data
-* Visualizar registros
-* Remover entradas
-* Salvamento com localStorage
-* Funcionamento offline
-* Instalação na tela inicial
-* Layout responsivo
+A atividade teve como objetivo aplicar técnicas de otimização de performance utilizando Lighthouse e boas práticas de desenvolvimento web.
+
+---
+
+# Gargalos Identificados
+
+Na análise inicial com Lighthouse foram encontrados:
+
+* Recursos não minificados
+* JavaScript bloqueando renderização
+* Arquivos CSS grandes
+* Imagens não otimizadas
+* Ausência de formatos modernos de imagem
+
+---
+
+# Melhorias Aplicadas
+
+## Imagens
+
+* Conversão de PNG para WEBP
+* Redução do tamanho dos ícones
+
+## CSS e JavaScript
+
+* Minificação dos arquivos
+* Remoção de código desnecessário
+* Remoção de logs e espaços extras
+
+## PWA
+
+* Service Worker otimizado
+* Cache dos principais arquivos
+* Melhor funcionamento offline
 
 ## Estrutura
 
-* index.html
-* style.css
-* script.js
-* manifest.json
-* service-worker.js
-* icons/
+* Código reorganizado
+* Melhor carregamento da aplicação
 
-## Como executar
+---
 
-Abra o projeto com Live Server no VS Code.
+# Comparativo
 
-## Tecnologias
+## Antes
+
+Ver arquivo:
+
+```txt id="jlwm6w"
+relatorios/antes.png
+```
+
+## Depois
+
+Ver arquivo:
+
+```txt id="fjlwmc"
+relatorios/depois.png
+```
+
+---
+
+# Resultados
+
+Após as otimizações:
+
+* Melhor tempo de carregamento
+* Melhor pontuação no Lighthouse
+* Redução de recursos carregados
+* Melhor experiência em dispositivos móveis
+
+---
+
+# Tecnologias
 
 * HTML
 * CSS
 * JavaScript
 * PWA
-* localStorage
+* Lighthouse
+* Service Worker
