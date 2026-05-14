@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
   <title>Diário de Bordo</title>
 
@@ -10,30 +14,51 @@
 
   <link rel="manifest" href="manifest.json">
 
-  <meta name="theme-color" content="#2563eb">
+  <meta
+    name="theme-color"
+    content="#2563eb"
+  >
 </head>
+
 <body>
 
   <div class="container">
+
     <h1>📘 Diário de Bordo</h1>
 
     <form id="form">
-      <input type="text" id="titulo" placeholder="Título" required>
 
-      <textarea id="descricao" placeholder="Descrição" required></textarea>
+      <input
+        type="text"
+        id="titulo"
+        placeholder="Título"
+        required
+      >
 
-      <input type="date" id="data" required>
+      <textarea
+        id="descricao"
+        placeholder="Descrição"
+        required
+      ></textarea>
 
-      <button type="submit">Adicionar</button>
+      <input
+        type="date"
+        id="data"
+        required
+      >
+
+      <button type="submit">
+        Adicionar
+      </button>
+
     </form>
 
-    <div id="installContainer">
-      <button id="installBtn" hidden>
-        Instalar Aplicativo
-      </button>
-    </div>
+    <button id="installBtn" hidden>
+      Instalar Aplicativo
+    </button>
 
     <div id="lista"></div>
+
   </div>
 
   <script src="script.js"></script>
